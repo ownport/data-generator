@@ -1,6 +1,6 @@
 # data-generator
 
-Command line tool for generating fake data
+Simple service for generating fake data
 
 ## Based on
 
