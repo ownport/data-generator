@@ -4,7 +4,7 @@ Simple service for generating fake data
 
 ## Based on
 
-- [joke2k/faker](https://github.com/joke2k/faker)
+- [joke2k/faker](https://github.com/joke2k/faker), the list of available [providers](http://fake-factory.readthedocs.org/en/master/providers.html)
 - [Flask](http://flask.pocoo.org/)is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. 
 - [YAML](http://pyyaml.org/) implementations for Python
 
