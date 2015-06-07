@@ -1,0 +1,27 @@
+dataset: 
+  name: test dataset #1
+  description: Test dataset for testing Data Generator
+  locale: en_US
+  headers: true
+  delimiter: \001
+  rows: 10
+
+structure:
+
+  - name: id
+    type: fake.md5()
+
+  - name: constant
+    type: "10"
+
+  - name: first_name
+    type: fake.first_name()
+
+  - name: last_name
+    type: fake.last_name()
+
+  - name: password
+    type: fake.password(length=30, special_chars=True, digits=True, upper_case=True, lower_case=True)
+
+  - name: address
+    type: fake.address()
