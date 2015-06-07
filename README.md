@@ -2,6 +2,12 @@
 
 Command line tool for generating fake data
 
+## Based on
+
+- [joke2k/faker](https://github.com/joke2k/faker)
+- [Flask](http://flask.pocoo.org/)is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. 
+- [YAML](http://pyyaml.org/) implementations for Python
+
 
 ## Sample request for generating data
 
@@ -10,8 +16,6 @@ dataset:
   name: test dataset #1
   description: Test dataset for testing Data Generator
   locale: en_US
-  headers: true
-  delimiter: \001
   rows: 10
 
 structure:
@@ -44,7 +48,7 @@ docker build -t 'data-generator' .
 ## Run data generator in Docker
 
 ```
-$ docker run -it --rm --name 'data-generator' -p 8088:5000 data-generator:latest python /data-generator/generator.py
+$ docker run -it --rm --name 'data-generator' -p 5000:5000 data-generator:latest python /data-generator/generator.py
  * Running on http://0.0.0.0:5000/
 ```
 

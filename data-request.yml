@@ -2,8 +2,6 @@ dataset:
   name: test dataset #1
   description: Test dataset for testing Data Generator
   locale: en_US
-  headers: true
-  delimiter: \001
   rows: 10
 
 structure:
